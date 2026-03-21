@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <defs>
+    <!--
+      Full-bleed: NO squircle in artwork.
+      macOS Big Sur+ applies squircle mask to ALL dock icons automatically.
+      Baking squircle into PNG causes double-clipping → icon appears smaller.
+    -->
+    <linearGradient id="bg" x1="0" y1="0" x2="1024" y2="1024" gradientUnits="userSpaceOnUse">
+      <stop offset="0%"   stop-color="#3730a3"/>
+      <stop offset="100%" stop-color="#7c3aed"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0" cy="0" r="600" gradientUnits="userSpaceOnUse">
+      <stop offset="0%"   stop-color="white" stop-opacity="0.18"/>
+      <stop offset="60%"  stop-color="white" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1024" height="1024" fill="url(#bg)"/>
+  <rect width="1024" height="1024" fill="url(#glow)"/>
+
+  <!-- >_ terminal symbol, centered -->
+  <polyline
+    points="322,410 502,516 322,622"
+    fill="none"
+    stroke="white"
+    stroke-width="62"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    opacity="0.97"
+  />
+  <line
+    x1="548" y1="606"
+    x2="700" y2="606"
+    stroke="white"
+    stroke-width="54"
+    stroke-linecap="round"
+    opacity="0.97"
+  />
+</svg>
